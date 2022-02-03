@@ -1,0 +1,180 @@
+body,
+p,
+div {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-mobile.png);
+}
+
+body,
+.form-container input::placeholder,
+.free-trail-btn,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.title-header {
+  padding: 25px 0;
+  font-size: 32px;
+
+  font-weight: 700;
+  color: #eee;
+}
+
+.description-container {
+  color: #eee;
+  font-size: 16px;
+}
+
+.user-input-section {
+  padding: 55px 0;
+}
+
+.free-trail-container {
+  background-color: hsl(248, 32%, 49%);
+  color: #eee;
+  font-weight: 400;
+  padding: 13px 20%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.205);
+}
+
+.bold-weight-text {
+  font-weight: 600;
+}
+
+.form-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 1px rgba(0, 0, 0, 0.205);
+}
+
+.form-container input {
+  padding: 25px 20px;
+  margin: 10px 6px;
+  border: 1px hsl(246, 25%, 77%) solid;
+  border-radius: 5px;
+}
+
+.form-container .input-error {
+  background: url("./images/icon-error.svg") no-repeat right center;
+  outline: 2px hsl(0, 100%, 74%) solid;
+  background-position: 93%;
+}
+
+.input-error::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+/* .input-error::after {
+  content: "";
+  display: block;
+  text-align: right;
+} */
+
+.form-container input::placeholder {
+  font-weight: 600;
+}
+
+.error-message-display-off {
+  display: none;
+}
+
+.error-message {
+  font-size: 10px;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  padding-right: 10px;
+}
+
+.free-trail-btn {
+  margin-top: 10px;
+  height: 65px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.terms-and-service-tag {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  color: hsl(246, 25%, 77%);
+}
+
+.terms-and-service-tag a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 550px) {
+  .title-header,
+  .description-container {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  .user-input-section {
+    margin: 0 auto;
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .starting-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .title-header {
+    font-size: 52px;
+  }
+
+  .description-container {
+    font-size: 19px;
+  }
+
+  .title-header,
+  .description-container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .user-input-section {
+    margin: 0 auto;
+    width: 560px;
+  }
+
+  .free-trail-btn:hover {
+    transition: background-color 0.3s ease;
+    background-color: hsl(154, 59%, 70%);
+  }
+}
