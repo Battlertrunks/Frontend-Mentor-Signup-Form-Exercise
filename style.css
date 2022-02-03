@@ -173,6 +173,10 @@ main {
     width: 560px;
   }
 
+  .free-trail-container {
+    padding: 20px 20%;
+  }
+
   .free-trail-btn:hover {
     transition: background-color 0.3s ease;
     background-color: hsl(154, 59%, 70%);
